@@ -110,5 +110,5 @@ summary({'bindir': get_option('bindir'),
         }, section: 'Directories')
 
 
-subdir('core')
+subdir('graph')
 subdir('blocks-lgpl')

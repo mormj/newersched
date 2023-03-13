@@ -1,4 +1,7 @@
+#pragma once
+
 #include <graph.hpp>
+#include <constants.hpp>
 
 namespace fg = fair::graph;
 
@@ -6,8 +9,6 @@ namespace fg = fair::graph;
 
 namespace gr {
 namespace math {
-
-inline constexpr std::size_t N_MAX = std::numeric_limits<std::size_t>::max();
 
 template <typename T>
 class multiply_const : public fg::node<multiply_const<T>, fg::IN<T, 0, N_MAX, "in">, fg::OUT<T, 0, N_MAX, "out">> {
